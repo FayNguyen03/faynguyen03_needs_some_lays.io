@@ -4,7 +4,7 @@ import Social from "./Social";
 import ContactForm from "./ContactForm";
 
 function Contact(){
-    return <div className="row">
+    return <div className="contact" id="contact">
         <div className="contact-left">
             <Method action="mailto:nguyen94@stolaf.edu" icon="fa-solid fa-envelope" contact="nguyen94@stolaf.edu"/>
             <Method action="mailto:ntkhanh391914@gmail.com" icon="fa-regular fa-envelope" contact="ntkhanh391914@gmail.com"/>

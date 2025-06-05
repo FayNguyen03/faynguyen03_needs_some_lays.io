@@ -1,0 +1,39 @@
+:root{
+    --font-family: 'Karla', sans-serif;
+    --btn-bg: #000;
+    --button-color: #cbcbcb;
+    --btn-color-hover: #fff;
+    --body-bg: #1E1F25;
+    --grad-color1: #eeaf61;
+    --grad-color2: #fb9062;
+    --grad-color3: #ee5d6c;
+    --grad-color4: #ce4993;
+    --grad-color5: #6a0d83;
+}
+
+.contactButtonBorder{
+    background: linear-gradient(115deg, #eeaf61, #fb9062, #ee5d6c, #6a0d83);
+    padding: 2px;
+}
+
+.contactButton{
+    border:none;
+    background: var(--btn-bg);
+    color: var(--button-color);
+    padding: 1em 1.5em;
+    font-family: inherit;
+    letter-spacing: .1em;
+    color: white;
+    background:transparent;
+}
+
+.contactButtonBorder:hover{
+    background: linear-gradient(115deg, #eeaf61, #fb9062, #ee5d6c, #6a0d83);
+}
+
+.contactButtonBorder .contactButton{
+    transition-delay:50ms;
+    background: var(--btn-color-hover);
+    color: var(--btn-bg);
+    padding: 1.1em 1.6em;
+}
