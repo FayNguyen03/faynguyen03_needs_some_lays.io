@@ -1,5 +1,6 @@
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
+import "./Experience.css"
 const experiences: any[] = [
     {
         id: 1,
@@ -43,7 +44,7 @@ const experiences: any[] = [
 
 const Experience:React.FC = () =>{
     return(
-        <div className="Experience">
+        <div className="experience">
             {
                 experiences.map((experience:{id: number, icon: string, position:string, duration: string, company: string, detail?: any}) =>{
                     return <ExperienceCard  key={experience.id}

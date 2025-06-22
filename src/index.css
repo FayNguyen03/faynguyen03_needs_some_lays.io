@@ -11,25 +11,25 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --bone: #DDD8C4;
+  --celadon:#a3c9a8;
+  --cambridge-blue: #84b59f;
+  --dark-cambridge-blue: #69a297;
+  --airforce-blue: #50808e;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: black;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--dark-cambridge-blue);
 }
 
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
-}
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {

@@ -1,5 +1,6 @@
 import React from "react";
 import Detail from "./Detail"
+import "./ExperienceCard.css"
 type ExperienceCardProps = {
     icon: string;
     position: string;
@@ -15,8 +16,9 @@ type ExperienceCardProps = {
 
 const ExperienceCard:React.FC<ExperienceCardProps> = (props: ExperienceCardProps) =>{
     return(
-        <div className="experience-card">
-            <h2>{props.position}</h2>
+        <div className="experienceCard">
+            <i className={props.icon}></i>
+            <h2 className="position">{props.position}</h2>
             <p><span className="duration"><em>{props.duration}</em></span><br />{props.company}</p>
             {props.detail && <Detail title={props.detail.title} description={props.detail.description} 
             {...(props.detail.link && {link:props.detail.link})} 
