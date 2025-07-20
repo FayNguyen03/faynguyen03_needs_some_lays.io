@@ -45,6 +45,7 @@ const experiences: any[] = [
 const Experience:React.FC = () =>{
     return(
         <div className="experience">
+            <h2>Experience</h2>
             {
                 experiences.map((experience:{id: number, icon: string, position:string, duration: string, company: string, detail?: any}) =>{
                     return <ExperienceCard  key={experience.id}
