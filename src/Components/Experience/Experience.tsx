@@ -6,7 +6,7 @@ const experiences: any[] = [
         id: 1,
         icon: 'fa-brands fa-salesforce',
         position: 'SWE Intern',
-        duration: 'June 2025 - Present',
+        duration: 'June 2025 - Aug 2025',
         company: 'Salesforce',
         detail: {
             title: 'Responsibility:',
@@ -17,7 +17,7 @@ const experiences: any[] = [
         id: 2,
         icon: 'fa-solid fa-code',
         position: 'CURI Undergraduate Researcher',
-        duration: 'May 2023 - May 2025',
+        duration: 'May 2023 - May 2024',
         company: 'Saint Olaf College',
         detail: {
             title: 'Project Description:',
