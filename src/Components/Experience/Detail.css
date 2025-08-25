@@ -1,0 +1,15 @@
+.experienceCardDetail {
+    margin: 0;
+    padding: 0;
+}
+
+.detail {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.detail p {
+    color: #333;
+    font-size: 0.5rem;
+}
+

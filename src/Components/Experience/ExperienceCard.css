@@ -1,13 +1,99 @@
 .experienceCard{
-    background-color: var(--airforce-blue);
+    width: 400px;
     height: 200px;
-    padding: 40px;
-    font-size: 15px;
-    font-weight: 300;
-    border-right: 10px;
-    border-radius: 30px;
+    background: linear-gradient(
+        135deg,
+        #d4d4d4,
+        #f0f0f0,
+        #dcdcdc,
+        #bfbfbf,
+        #f8f8f8,
+        #d4d4d4
+    );
+    border-color: #d4d4d4;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 4);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-bottom: 10%;
+    transform-origin: center;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1;
 }
 
-.h2{
-    font-size: 30px;
+.detail{
+    visibility: hidden;
+}
+
+.experienceCard:hover{
+    box-shadow: 0 0 30px #333;
+    background-color: #333;
+    width: 550px;
+    height: 350px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.experience:hover .experienceCard:not(:hover) {
+    transform: scale(0.5);
+    opacity: 0.5;
+    filter: blur(1px);
+    z-index: 1;
+}
+
+.experienceCard:hover .detail{
+    visibility: visible;
+}
+
+.experienceCard:hover .titleSection{
+    background-color: black;
+    color: white;
+}
+
+.experienceCard:hover .position{
+    color: white;
+}
+
+i {
+    font-size: 80px;
+    color: black;
+    position: absolute;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    position: relative;
+    justify-items: center;
+}
+
+.position{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0px;
+    font-family: 'Playfair Display', serif; 
+    color: #333;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .experienceCard {
+        transition: none;
+    }
+    
+    .experienceCard:hover {
+        transform: none;
+        z-index: 1;
+        box-shadow: none;
+    }
+
+    .experienceCard:hover .detail{
+        visibility: hidden;
+    }
+    
+    .experience:hover .experienceCard:not(:hover) {
+        transform: none;
+        opacity: 1;
+        filter: none;
+    }
 }
