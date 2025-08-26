@@ -32,7 +32,7 @@ const experiences: any[] = [
         duration: 'Feb 2023 - Present',
         company: 'MSCS Department, Saint Olaf College',
         detail: {
-            description: 'Conducted training sessions at the beginning of each semester for the CS TAs; Provided comprehensive guidance on grading policies, effective communication strategies with students; Implemented best practices in the Computer Science community',
+            description: 'Conducted training sessions at the beginning of each semester for the TAs; Provided comprehensive guidance on grading policies, effective communication strategies with students; Implemented best practices in the Computer Science community',
         }
     },
     {

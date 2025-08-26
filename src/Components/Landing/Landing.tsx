@@ -1,11 +1,20 @@
 import './Landing.css'
 import React from 'react';
 import TextType from '../../ReactBitsEffect/TextType';
+
 const Landing: React.FC = () => {
   return (
     <div className="landing">
       <div className="landing-container">
         <div className="landing-content">
+          <div className="logo-container">
+            <img 
+              src="/Projects/LOGO.png" 
+              alt="Logo" 
+              className="spinning-logo"
+            />
+          </div>
+          
           <TextType 
             text={["Hello World!", "My name is FAY NGUYEN", "I am actively looking for New Grad position"]}
             typingSpeed={80}
@@ -17,9 +26,7 @@ const Landing: React.FC = () => {
             startOnVisible = {true}
             cursorBlinkDuration = {0.8}
           />
-          <div className="landing-subtitle">
-            <div className='endDate'>SPRING 2026</div>
-          </div>
+          
         </div>
       </div>
     </div>
