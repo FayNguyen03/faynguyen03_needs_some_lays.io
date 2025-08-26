@@ -1,0 +1,38 @@
+.Education {
+    padding: 5% 5% 5% 5%;
+}
+
+.EducationHeading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.EducationGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25%;
+}
+
+@media (max-width: 768px) {
+    .Education {
+        padding: 1rem;
+    }
+    
+    .EducationHeading {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .EducationGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

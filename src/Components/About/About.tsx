@@ -1,9 +1,10 @@
 import React from "react";
 import Education from "./Education";
+import Skills from "./Skills";
 const About: React.FC = () =>{
     return <div className = "About">
-        <h2>About</h2>
         <Education />
+        <Skills />
     </div>
 };
 

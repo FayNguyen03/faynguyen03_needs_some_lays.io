@@ -1,4 +1,5 @@
 import React from "react";
+import "./School.css";
 
 type SchoolProps ={
     schoolName: string;
@@ -11,12 +12,17 @@ type SchoolProps ={
 }
 
 const School: React.FC<SchoolProps> = (props: SchoolProps) =>{
-    return <div className="School" style={{ backgroundImage: `url(${props.imgURL})` }}>
-        <h3 className="SchoolName"><a href={props.url}>{props.schoolName}</a></h3>
-        <p className="SchoolLocation">{props.location}</p>
-        <p className="SchoolMajors">Major(s): {props.majors.join(", ")}</p>
-        <p className="SchoolGPA">GPA: {props.gpa}</p>
-        <p className="SchoolDuration">{props.duration}</p>
+    return <div className="School">
+        <div className="SchoolInfo">
+            <h3 className="SchoolName"><a href={props.url}>{props.schoolName}</a></h3>
+            <p className="SchoolLocation">{props.location}</p>
+            <p className="SchoolMajors">Major(s): {props.majors.join(", ")}</p>
+            <p className="SchoolGPA">GPA: {props.gpa}</p>
+            <p className="SchoolDuration">{props.duration}</p>
+        </div>
+        <div className="SchoolImage">
+            <img src={props.imgURL} alt={props.schoolName}/>
+        </div>
     </div>
 };
 
