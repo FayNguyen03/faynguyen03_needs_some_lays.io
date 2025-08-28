@@ -23,7 +23,6 @@ const schools: any[] = [{
 
 const Education: React.FC = () =>{
     return <div className = "Education">
-        <h2 className="EducationHeading">Education</h2>
         <div className="EducationGrid">
             {
                 schools.map((school: {schoolName: string, location: string, imgURL: string, url: string, majors: string[], gpa: string, duration: string}) =>{

@@ -1,11 +1,13 @@
 import LogoLoop from "../../ReactBitsEffect/LogoLoop"
-import { SiHaskell, SiReact, SiTypescript, SiTailwindcss, SiJavascript, SiRstudioide, SiGnubash, SiAndroidstudio, SiTableau, SiPostman, SiJson, SiVite, SiSplunk } from 'react-icons/si';
+import { SiCplusplus, SiHaskell, SiReact, SiTypescript, SiTailwindcss, SiJavascript, SiRstudioide, SiGnubash, SiAndroidstudio, SiTableau, SiPostman, SiJson, SiVite, SiSplunk } from 'react-icons/si';
 import { DiMysql, DiPostgresql, DiProlog, DiVisualstudio, DiMongodb } from "react-icons/di";
 import { FaPython, FaHtml5, FaCss3Alt, FaRust, FaGitAlt, FaNodeJs, FaBootstrap, FaDocker } from "react-icons/fa";
-import { TbBrandKotlin } from "react-icons/tb";
+import { TbBrandKotlin, TbBrandCSharp } from "react-icons/tb";
 import { AiOutlineDotNet } from "react-icons/ai";
 
 const programmingLanguages = [
+    { node: <SiCplusplus />, title: "C++", href: "https://isocpp.org" },
+    { node: <TbBrandCSharp />, title: "C#", href: "https://learn.microsoft.com/en-us/dotnet/csharp/" },
     { node: <SiReact />, title: "React", href: "https://react.dev" },
     { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
     { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
@@ -43,7 +45,7 @@ const Skills: React.FC = () => {
             logos={programmingLanguages}
             speed={120}
             direction="left"
-            logoHeight={48}
+            logoHeight={60}
             gap={40}
             pauseOnHover
             scaleOnHover
