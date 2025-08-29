@@ -30,7 +30,8 @@ const ContactForm: React.FC = () => {
         </div>
         <div className="form-email">
             <h3>Email</h3>
-            <textarea
+            <input
+                type="email"
                 required
                 placeholder="Please give me your email so I can reach out to you!"
                 value={email}
@@ -39,9 +40,9 @@ const ContactForm: React.FC = () => {
         </div>
         <div className="form-message">
             <h3>Message</h3>
-            <input
-                type="text"
+            <textarea
                 required
+                rows={6}
                 placeholder="Send me a message and I will get back to you as soon as possible!"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}/>
