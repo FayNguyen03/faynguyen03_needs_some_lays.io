@@ -86,7 +86,7 @@ i {
         z-index: 1;
         box-shadow: none;
     }
-
+    
     .experienceCard:hover .detail{
         visibility: hidden;
     }

@@ -6,6 +6,5 @@
     padding: 15px 0;
     background-color: #262626;
     font-weight: 300;
-    bottom: 0;
-    position: fixed;
+    position: relative;
 }
