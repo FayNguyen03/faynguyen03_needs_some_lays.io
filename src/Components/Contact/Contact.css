@@ -1,8 +1,8 @@
 .contact {
-    padding: 2% 5%;
+    padding: 2% 5% 2% 5%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 5%;
     flex-wrap: wrap;
 }
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 18px;
+    gap: 5%;
     flex-wrap: wrap;
 }
 
@@ -20,6 +20,8 @@
     flex-basis: 30%;
     min-width: 260px;
     margin-bottom: 24px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr;
 }
 
 .contact-right {

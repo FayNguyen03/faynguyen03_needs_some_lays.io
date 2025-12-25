@@ -9,7 +9,7 @@
 .method-item {
     text-decoration: none;
     border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.08);
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.2);
     padding: 20px 28px;
     min-width: 220px;
     max-width: 320px;
