@@ -1,4 +1,4 @@
-import Link from "../Link/Link";
+import { NavLink } from "react-router-dom";
 import GradientText from "../../ReactBitsEffect/GradientText";
 import "./Header.css";
 
@@ -20,10 +20,10 @@ function Header(){
                     FAY NGUYEN
                 </GradientText>
                 <ul id="sidemenu">
-                    <li><Link class="tab"  href="/#/about" text="ABOUT" /></li>
-                    <li><Link class="tab"  href="/#/experience" text="EXPERIENCE" /></li>
-                    <li><Link class="tab"  href="/#/project" text="PROJECT" /></li>
-                    <li><Link class="tab"  href="/#/contact" text="CONTACT" /></li>
+                    <li><NavLink to="/about" end className="tab">ABOUT</NavLink></li>
+                    <li><NavLink to="/experience" end className="tab">EXPERIENCE</NavLink></li>
+                    <li><NavLink to="/project" end className="tab">PROJECT</NavLink></li>
+                    <li><NavLink to="/contact" end className="tab">CONTACT</NavLink></li>
                 </ul>
             </div>
         </div>

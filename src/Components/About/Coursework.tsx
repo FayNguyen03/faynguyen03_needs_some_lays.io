@@ -30,6 +30,8 @@ const mathArray = [
     { name: 'Abstract Algebra', url: 'https://sis.stolaf.edu/sis/public-coursedesc.cfm?clbid=0000162390' },
     { name: 'Probability Theorys', url: 'https://sis.stolaf.edu/sis/public-coursedesc.cfm?clbid=0000163332' },
     { name: 'Modern Computational Maths', url: 'https://sis.stolaf.edu/sis/public-coursedesc.cfm?clbid=0000163229' },
+    { name: 'Combinatorics', url: 'https://sis.stolaf.edu/sis/public-coursedesc.cfm?clbid=0000165763' },
+    { name: 'Stochastic Processes', url: 'https://sis.stolaf.edu/sis/public-coursedesc.cfm?clbid=0000165764' }
 ];
 
 const mathCourses: Map<string, string> = new Map();

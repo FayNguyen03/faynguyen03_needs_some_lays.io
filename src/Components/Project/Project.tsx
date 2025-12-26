@@ -8,7 +8,7 @@ const verticalProject: any[] = [
         image: '/Projects/AND101P10Screens.gif',
         name: 'MORNING MOSAIC',
         icons: ['devicon-android-plain', 'devicon-kotlin-plain', 'devicon-androidstudio-plain'],
-        description: 'A morning app check for their horoscope prediction of the day, and read some news while they are starting their daily day',
+        description: 'A morning app that allows users to check for their horoscope prediction of the day, and read some news while they are starting their daily day',
         github: 'https://github.com/AND101-THE-GIRLS/MORNING_MOSAIC'
     },
     {
@@ -89,7 +89,7 @@ const horizontalProject: any[] = [
         image: '/Projects/WebProxy.png',
         name: 'CLI WEB PROXY SERVER',
         icons: ['devicon-csharp-plain', 'devicon-dotnetcore-plain', 'fa-solid fa-server'],
-        description: 'A multi-threaded web proxy server that handles HTTP and HTTPS requests, dynamically block and unblock URLs, and efficienly cache HTTP requests locally and save bandwidth.',
+        description: 'A multi-threaded web proxy server that handles HTTP and HTTPS requests, dynamically blocks and unblocks URLs, and efficienly caches HTTP requests locally to save bandwidth.',
         github: 'https://github.com/FayNguyen03/Web-Server-Proxy.git',
         link: 'https://drive.google.com/file/d/13w7haV3JCmmz3Adg7BI5TpUmqR_ywPT-/view?usp=sharing',
         linkIcon: 'fa-solid fa-video'
@@ -98,7 +98,7 @@ const horizontalProject: any[] = [
         image: '/Projects/ER Model.png',
         name: 'St.Olaf College MSCS Department Information Management',
         icons: ['devicon-mysql-plain colored', 'fa-solid fa-database'],
-        description: 'A holistic database design to store and manage student, faculty, course, degree path, major, grade, and course registration information related to the department.',
+        description: 'A holistic database designed to store and manage student, faculty, course, degree path, major, grade, and course registration information related to the MSCS department (report and graph included on GitHub repo).',
         github: 'https://github.com/FayNguyen03/MSCS-Information-Management.git',
     }
 ];

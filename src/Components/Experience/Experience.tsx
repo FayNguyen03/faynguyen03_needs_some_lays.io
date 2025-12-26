@@ -4,7 +4,7 @@ import "./Experience.css"
 const experiences: any[] = [
     {
         id: 0,
-        icon: 'devicon-atom-original',
+        icon: 'fa-solid fa-atom',
         position: 'Incoming Data Management Intern',
         duration: 'Jan 2026',
         company: 'IUPAC',
