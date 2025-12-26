@@ -1,4 +1,3 @@
-import React from "react";
 import "./Method.css";
 
 function Method(props: any){

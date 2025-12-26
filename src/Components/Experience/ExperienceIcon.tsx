@@ -1,5 +1,4 @@
 import React from 'react'
-import './ExperienceIcon.css'
 
 type ExperienceIconProps = {
     icons: string[]
