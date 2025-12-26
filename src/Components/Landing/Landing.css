@@ -1,5 +1,6 @@
 .landing {
     display: flex;
+    height: 90vh;
     align-items: center;
     justify-content: center;
     color: var(--text-color-light);

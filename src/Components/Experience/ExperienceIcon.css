@@ -4,9 +4,10 @@
     gap: 10px;
     justify-items: center;
     align-items: center;
-    margin-top: 5%;
 }
 
-.detail{
-    padding: 0 5%;  
+.experience-icons i {
+    color: var(--color-primary);
+    font-size: 3rem;
+    transition: transform 0.3s, color 0.3s;
 }

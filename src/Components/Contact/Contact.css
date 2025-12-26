@@ -70,3 +70,29 @@
         gap: 10px;
     }
 }
+
+.social-icons #resume {
+    position: relative; 
+}
+
+.social-icons #resume::after {
+    content: "Resume 12/2025";
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--airforce-blue);
+    color: black;
+    padding: 5px;
+    border-radius: 2px;
+    white-space: nowrap;
+    font-size: 14px;
+    margin-bottom: 5px; /* Add some space between button and tooltip */
+    z-index: 1000; /* Ensure tooltip appears above other elements */
+}
+
+.social-icons #resume:hover::after {
+    display: block;
+    color: white;
+}

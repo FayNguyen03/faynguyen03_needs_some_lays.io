@@ -1,6 +1,6 @@
 import LogoLoop from "../../ReactBitsEffect/LogoLoop"
 import { SiCplusplus, SiHaskell, SiReact, SiTypescript, SiTailwindcss, SiJavascript, SiRstudioide, SiGnubash, SiAndroidstudio, SiTableau, SiPostman, SiJson, SiVite, SiSplunk } from 'react-icons/si';
-import { DiMysql, DiPostgresql, DiProlog, DiVisualstudio, DiMongodb } from "react-icons/di";
+import { DiMysql, DiPostgresql, DiProlog, DiVisualstudio, DiMongodb, DiJava } from "react-icons/di";
 import { FaPython, FaHtml5, FaCss3Alt, FaRust, FaGitAlt, FaNodeJs, FaBootstrap, FaDocker } from "react-icons/fa";
 import { TbBrandKotlin, TbBrandCSharp } from "react-icons/tb";
 import { AiOutlineDotNet } from "react-icons/ai";
@@ -36,6 +36,7 @@ const programmingLanguages = [
     { node: <FaBootstrap />, title: "Bootstrap", href: "https://getbootstrap.com" },
     { node: <FaDocker />, title: "Docker", href: "https://www.docker.com" },
     { node: <SiSplunk />, title: "Splunk", href: "https://www.splunk.com" },
+    { node: <DiJava />, title: "Java", href: "https://www.java.com" },
 ];
 
 const Skills: React.FC = () => {
@@ -45,7 +46,7 @@ const Skills: React.FC = () => {
             logos={programmingLanguages}
             speed={120}
             direction="left"
-            logoHeight={60}
+            logoHeight={80}
             gap={40}
             pauseOnHover
             scaleOnHover

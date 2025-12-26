@@ -16,7 +16,7 @@ const Landing: React.FC = () => {
           </div>
           
           <TextType 
-            text={["Hello World!", "My name is FAY NGUYEN", "I am actively looking for New Grad position"]}
+            text={["Hello World!", "My name is FAY NGUYEN", "I am actively looking for ☀️ Summer 2026 ☀️ New Grad position"]}
             typingSpeed={80}
             pauseDuration={2000}
             showCursor={true}

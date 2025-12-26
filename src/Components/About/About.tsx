@@ -9,7 +9,6 @@ const About: React.FC = () => {
     return (
         <div className="About">
             <div className="AboutSection about-section">
-                <h2>About Me</h2>
                 <Info />
             </div>
             <div className="AboutSection education-section">
