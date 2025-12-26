@@ -1,7 +1,6 @@
 import React from "react";
 import Detail from "./Detail"
 import "./ExperienceCard.css"
-import ExperienceIcon from "./ExperienceIcon"
 
 type ExperienceCardProps = {
     icon: string;
