@@ -31,11 +31,18 @@ const verticalProject: any[] = [
 const horizontalProject: any[] = [
     
     {
-        image: '/Projects/Restaurant.png',
-        name: 'RESTAURANT INVENTORY MANAGEMENT',
-        icons: ['devicon-csharp-plain', 'devicon-dotnetcore-plain', 'fa-solid fa-database', 'devicon-microsoftsqlserver-plain-wordmark', 'devicon-visualstudio-plain'],
-        description: 'A GUI system that streamlines the restaurant staff\'s booking processes, customer records management, and staff administration and requires a login procedure for access',
-        github: 'https://github.com/FayNguyen03/RestaurantManagement'
+        image: '/Projects/Minneseum.gif',
+        name: 'MINNESEUM',
+        icons: ['devicon-javascript-plain', 'devicon-html5-plain', 'devicon-css3-plain', 'devicon-postgresql-plain'],
+        description: 'A website displays all Minnesotan museums',
+        github: 'https://github.com/FayNguyen03/MINNESEUM.git'
+    },
+    {
+        image: '/Projects/Serena.gif',
+        name: 'SERENA\'S AURELINE',
+        icons: ['devicon-javascript-plain', 'devicon-html5-plain', 'devicon-css3-plain', 'devicon-postgresql-plain', 'devicon-react-original'],
+        description: 'Serena\'s Auréline is a creative web app that lets users design their own unique jewelry sets with jewelry pieces (bracelet, necklace, ring, and earrings). Users can choose materials, colors, charms, stones, and personalized engravings to create one-of-a-kind designs that match their style.',
+        github: 'https://github.com/FayNguyen03/diy_delight.git'
     },
     {
         image: '/Projects/First Page.png',
@@ -44,7 +51,22 @@ const horizontalProject: any[] = [
         description: 'A networking platform for students who need academic support and who want to become tutors',
         github: 'https://github.com/FayNguyen03/STUDEE'
     },
-    
+    {
+        image: '/Projects/RendezVue.gif',
+        name: 'RendezVue',
+        icons: ['devicon-javascript-plain', 'devicon-html5-plain', 'devicon-css3-plain', 'devicon-postgresql-plain', 'devicon-react-original'],
+        description: 'This application is designed to connect people who share the same hobbies and live nearby to foster meaningful friendships and community connections. The app functions similarly to a dating platform but focuses on hobby-based matching.',
+        github: 'https://github.com/FayNguyen03/RendezVue.git'
+    },
+    {
+        image: '/Projects/Asian130.gif',
+        name: 'Collective Warriors From The East',
+        icons: ['devicon-typescript-plain', 'devicon-html5-plain', 'devicon-css3-plain','devicon-react-original'],
+        description: 'A website that defines Asian superheroes as a distinct sci-fi subgenre and introduces some prominent examples.',
+        github: 'https://github.com/FayNguyen03/asian130.git',
+        link: 'hhttps://asian130.onrender.com/',
+        linkIcon: 'bi bi-globe'
+    },
     {
         image: '/Projects/DS.png',
         name: 'DATA SCIENCE PORTFOLIO WEBSITE',
@@ -97,6 +119,25 @@ const Project: React.FC = () => {
 
   return (
     <div className='project'> 
+    <h2>Projects</h2>
+        <div className='horizontal-project'>
+            {
+                horizontalProject.map((project, index) =>{
+                    return <ProjectCard 
+                                        key={index}
+                                        image = {project.image}
+                                        name= {project.name}
+                                        icons= {project.icons}
+                                        description= {project.description}
+                                        isVertical={false}
+                                        onCardClick={() => handleCardClick(project)}
+                                        {...(project.github && {github:project.github})}
+                                        {...(project.link && {link:project.link})} 
+                                        {...(project.linkIcon && {linkIcon:project.linkIcon})}
+                                        />
+                })
+            }
+        </div>
         <h2>Android Projects</h2>
         <div className='vertical-project'>
             {
@@ -108,25 +149,6 @@ const Project: React.FC = () => {
                                         icons= {project.icons}
                                         description= {project.description}
                                         isVertical={true}
-                                        onCardClick={() => handleCardClick(project)}
-                                        {...(project.github && {github:project.github})}
-                                        {...(project.link && {link:project.link})} 
-                                        {...(project.linkIcon && {linkIcon:project.linkIcon})}
-                                        />
-                })
-            }
-        </div>
-        <h2>Projects</h2>
-        <div className='horizontal-project'>
-            {
-                horizontalProject.map((project, index) =>{
-                    return <ProjectCard 
-                                        key={index}
-                                        image = {project.image}
-                                        name= {project.name}
-                                        icons= {project.icons}
-                                        description= {project.description}
-                                        isVertical={false}
                                         onCardClick={() => handleCardClick(project)}
                                         {...(project.github && {github:project.github})}
                                         {...(project.link && {link:project.link})} 
