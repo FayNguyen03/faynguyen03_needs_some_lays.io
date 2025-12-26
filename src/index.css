@@ -12,6 +12,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --primary-color: #1A181B;
+  --secondary-color: #564D65;
+  --tertiary-color: #3E8989;
+  --quaternary-color: #2CDA9D;
+  --quinary-color: #05F140;
   --bone: #DDD8C4;
   --celadon:#a3c9a8;
   --cambridge-blue: #84b59f;

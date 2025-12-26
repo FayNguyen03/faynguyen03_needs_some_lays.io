@@ -44,7 +44,7 @@ const Skills: React.FC = () => {
         <div style={{ height: '200px', position: 'relative', overflow: 'hidden'}}>
         <LogoLoop
             logos={programmingLanguages}
-            speed={120}
+            speed={100}
             direction="left"
             logoHeight={80}
             gap={40}

@@ -97,12 +97,3 @@ i {
         filter: none;
     }
 }
-
-.experienceCard .company {
-    text-decoration: underline;
-}
-
-.experienceCard:hover .company {
-    text-decoration: none;
-}
-

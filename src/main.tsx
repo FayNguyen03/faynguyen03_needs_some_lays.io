@@ -1,11 +1,12 @@
-import { HashRouter } from 'react-router'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './Components/App.tsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router';
+import App from './Components/App';
 
-//use HashRouter to avoid issues with the server with GitHub pages
-createRoot(document.getElementById('root')!).render(
-  <HashRouter>
-    <App />
-  </HashRouter>
-)
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);

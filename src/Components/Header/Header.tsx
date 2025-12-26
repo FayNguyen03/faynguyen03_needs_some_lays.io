@@ -20,10 +20,10 @@ function Header(){
                     FAY NGUYEN
                 </GradientText>
                 <ul id="sidemenu">
-                    <li><Link class="tab"  href="/about" text="ABOUT" /></li>
-                    <li><Link class="tab"  href="/experience" text="EXPERIENCE" /></li>
-                    <li><Link class="tab"  href="/project" text="PROJECT" /></li>
-                    <li><Link class="tab"  href="/contact" text="CONTACT" /></li>
+                    <li><Link class="tab"  href="/#/about" text="ABOUT" /></li>
+                    <li><Link class="tab"  href="/#/experience" text="EXPERIENCE" /></li>
+                    <li><Link class="tab"  href="/#/project" text="PROJECT" /></li>
+                    <li><Link class="tab"  href="/#/contact" text="CONTACT" /></li>
                 </ul>
             </div>
         </div>
