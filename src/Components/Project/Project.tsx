@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProjectCard from './ProjectCard';
+import ProjectModal from './ProjectModal';
 import './Project.css';
 
 const verticalProject: any[] = [
@@ -12,7 +13,7 @@ const verticalProject: any[] = [
     },
     {
         image: '/Projects/wordle.gif',
-        name: 'WORDLE',
+        name: 'ANDROID WORDLE',
         icons: ['devicon-android-plain', 'devicon-kotlin-plain', 'devicon-androidstudio-plain'],
         description: 'It\'s Wordle Time!!!!',
         github: 'https://github.com/FayNguyen03/WORDLE'
@@ -20,8 +21,8 @@ const verticalProject: any[] = [
     {
         image: '/Projects/KitchenStory.png',
         name: 'KITCHEN STORY',
-        icons: ['devicon-android-plain', 'devicon-kotlin-plain', 'devicon-androidstudio-plain', 'devicon-sqlite-plain', 'devicon-postman-plain'],
-        description: 'An Android app that allows users to generate the list of recipes for homecooked meals based on the available ingredients that users have at home. After clicking on recipe, users will see step by step instructions to make the homecooked meals. The app will also show the information about the nutritions ad calories for each meal.',
+        icons: ['devicon-android-plain', 'devicon-kotlin-plain', 'devicon-androidstudio-plain', 'devicon-sqlite-plain'],
+        description: 'An Android app that allows users to generate the list of recipes for homecooked meals based on the available ingredients that users have at home. After clicking on recipe, users will see step by step instructions to make the homecooked meals. The app will also show the information about the nutritions and calories for each meal.',
         github: 'https://github.com/Android-102-Project/capstone-project.git',
         link: 'https://youtu.be/p_rFoG0tTxI',
         linkIcon: 'fa-brands fa-youtube'
@@ -81,15 +82,33 @@ const horizontalProject: any[] = [
 ];
 
 const Project: React.FC = () => {
+  const [selectedProject, setSelectedProject] = useState<any | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleCardClick = (project: any) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
+
   return (
     <div className='project'> 
+        <h2>Android Projects</h2>
         <div className='vertical-project'>
             {
-                verticalProject.map((project) =>{
-                    return <ProjectCard image = {project.image}
+                verticalProject.map((project, index) =>{
+                    return <ProjectCard 
+                                        key={index}
+                                        image = {project.image}
                                         name= {project.name}
                                         icons= {project.icons}
                                         description= {project.description}
+                                        isVertical={true}
+                                        onCardClick={() => handleCardClick(project)}
                                         {...(project.github && {github:project.github})}
                                         {...(project.link && {link:project.link})} 
                                         {...(project.linkIcon && {linkIcon:project.linkIcon})}
@@ -97,13 +116,18 @@ const Project: React.FC = () => {
                 })
             }
         </div>
+        <h2>Projects</h2>
         <div className='horizontal-project'>
             {
-                horizontalProject.map((project) =>{
-                    return <ProjectCard image = {project.image}
+                horizontalProject.map((project, index) =>{
+                    return <ProjectCard 
+                                        key={index}
+                                        image = {project.image}
                                         name= {project.name}
                                         icons= {project.icons}
                                         description= {project.description}
+                                        isVertical={false}
+                                        onCardClick={() => handleCardClick(project)}
                                         {...(project.github && {github:project.github})}
                                         {...(project.link && {link:project.link})} 
                                         {...(project.linkIcon && {linkIcon:project.linkIcon})}
@@ -111,6 +135,19 @@ const Project: React.FC = () => {
                 })
             }
         </div>
+        {selectedProject && (
+          <ProjectModal
+            isOpen={isModalOpen}
+            onClose={handleCloseModal}
+            image={selectedProject.image}
+            name={selectedProject.name}
+            icons={selectedProject.icons}
+            description={selectedProject.description}
+            {...(selectedProject.github && {github:selectedProject.github})}
+            {...(selectedProject.link && {link:selectedProject.link})}
+            {...(selectedProject.linkIcon && {linkIcon:selectedProject.linkIcon})}
+          />
+        )}
     </div>
     
   )

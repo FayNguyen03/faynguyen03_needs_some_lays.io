@@ -1,4 +1,5 @@
 import React from 'react'
+import './ProjectIcon.css'
 
 type ProjectIconProps = {
     icons: string[]
@@ -18,4 +19,4 @@ const ProjectIcon: React.FC<ProjectIconProps> = (props:ProjectIconProps) => {
   )
 }
 
-export default ProjectIcon
+export default ProjectIcon;
