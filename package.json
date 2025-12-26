@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://faynguyen03.github.io/faynguyen03_needs_some_lays.io",
+  "homepage": "https://faynguyen03.github.io/",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",,
+    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
